@@ -6,4 +6,9 @@ class Triangle
     @l3 = l3
   end
 
+  def kind
+    if @l1 == @l2 && @l1 == @l3
+      self.kind = :equilateral
+    end
+  end
 end
