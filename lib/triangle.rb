@@ -6,6 +6,10 @@ class Triangle
     @l3 = l3
   end
 
+  def valid?
+    (@l1 + @l2 > @l3) && (@l2 + @l3 > @l1) && (@l1 + @l3 > @l2)
+  end
+
   def kind
     if @l1 == @l2 && @l1 == @l3
       self.kind = :equilateral
