@@ -14,11 +14,7 @@ class Triangle
     elsif (@l2 = @l3) || (@l1 == @l2) || (@l1 == @l3)
       self.kind = :isosceles
   else
-    begin
-        raise TriangleError
-      rescue TriangleError => error
-          puts error.message
-      end
+  raise TriangleError
   end
   end
 end
