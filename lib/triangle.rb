@@ -24,7 +24,5 @@ class Triangle
 end
 
 class TriangleError < StandardError
-def message
-  p "This aint a Triangle"
-end
+
 end
